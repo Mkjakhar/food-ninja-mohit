@@ -10,10 +10,8 @@ function App() {
         <BackToTop />
         <Header />
         <Routes>
-          <Route>
-            <Route path="/" element={<Home />} />
-            <Route path="/Blog-details" element={<SingleBlog />} />
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/Blog-details" element={<SingleBlog />} />
         </Routes>
       </BrowserRouter>
     </>
