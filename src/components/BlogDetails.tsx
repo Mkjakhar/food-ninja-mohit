@@ -13,7 +13,7 @@ const BlogDetails = () => {
         <h2 className="text-3xl sm:text-[32px] md:text-[46px] text-black font-black leading-normal font-Merriweather">
           What I Learned About Life and Food Backpacking Around Greece
         </h2>
-        <p className="text-sm mb-3 sm:mb-4 leading-[160%] text-dark_gray font-Merriweather">
+        <p className="text-sm mb-3 sm:mb-4 !leading-[160%] text-dark_gray font-Merriweather">
           Aug 1, 2021 • 7 min read
         </p>
         <img
@@ -23,7 +23,7 @@ const BlogDetails = () => {
         />
         <div className="flex items-center gap-[14px] mt-5">
           <img src={profileImg} alt="George Costanza" />
-          <h3 className="text-sm font-Merriweather font-bold leading-[160%] text-black">
+          <h3 className="text-sm font-Merriweather font-bold !leading-[160%] text-black">
             George Costanza
           </h3>
         </div>
@@ -41,24 +41,24 @@ const BlogDetails = () => {
           tellus diam.
         </p>
         <div className="sm:p-[35px] p-6 sm:pt-8 bg-white_off_2 my-7 sm:mt-10 sm:mb-[10px] rounded-lg border border-[#ddd]">
-          <h3 className="text-xl md:text-2xl font-Merriweather font-bold leading-[160%] text-black">
+          <h3 className="text-xl md:text-2xl font-Merriweather font-bold !leading-[160%] text-black">
             In this article
           </h3>
           <ol
             type="1"
             className="list-[number] list-outside pl-6 sm:pl-7 gap-4"
           >
-            <li className="text-base sm:text-[18px] mt-4 font-Merriweather leading-[160%] text-light_brown">
+            <li className="text-base sm:text-[18px] mt-4 font-Merriweather !leading-[160%] text-light_brown">
               <a href="#how-to-travel" className="underline">
                 How to travel without spending a dime
               </a>
             </li>
-            <li className="text-base sm:text-[18px] mt-4 font-Merriweather leading-[160%] text-light_brown">
+            <li className="text-base sm:text-[18px] mt-4 font-Merriweather !leading-[160%] text-light_brown">
               <a href="#reward-points" className="underline">
                 Get the most out of your credit card reward points
               </a>
             </li>
-            <li className="text-base sm:text-[18px] mt-4 font-Merriweather leading-[160%] text-light_brown">
+            <li className="text-base sm:text-[18px] mt-4 font-Merriweather !leading-[160%] text-light_brown">
               <a href="#pieces-of-clothing" className="underline">
                 Why you don’t need more than 3 pieces of clothing
               </a>
@@ -74,7 +74,7 @@ const BlogDetails = () => {
         </p>
         <h3
           id="how-to-travel"
-          className="text-xl md:text-2xl font-Merriweather font-bold leading-[160%] mt-5 sm:mt-[30px] text-light_brown"
+          className="text-xl md:text-2xl font-Merriweather font-bold !leading-[160%] mt-5 sm:mt-[30px] text-light_brown"
         >
           How to travel without spending a dime
         </h3>
@@ -94,7 +94,7 @@ const BlogDetails = () => {
         </p>
         <h3
           id="reward-points"
-          className="text-xl md:text-2xl font-Merriweather font-bold leading-[160%] mt-5 sm:mt-[30px] text-light_brown"
+          className="text-xl md:text-2xl font-Merriweather font-bold !leading-[160%] mt-5 sm:mt-[30px] text-light_brown"
         >
           Get the most out of your credit card reward points
         </h3>
@@ -116,7 +116,7 @@ const BlogDetails = () => {
         </p>
         <h3
           id="pieces-of-clothing"
-          className="text-xl md:text-2xl font-Merriweather font-bold leading-[160%] mt-5 sm:mt-[30px] text-light_brown"
+          className="text-xl md:text-2xl font-Merriweather font-bold !leading-[160%] mt-5 sm:mt-[30px] text-light_brown"
         >
           Why you don’t need more than 3 pieces of clothing
         </h3>
@@ -136,7 +136,7 @@ const BlogDetails = () => {
           bibendum semper. Sed lorem vel donec proin. Volutpat aliquet rhoncus
           sit et.
         </p>
-        <h2 className="text-3xl md:text-4xl font-Merriweather font-bold leading-[160%] mt-7 sm:mt-[50px] text-light_brown">
+        <h2 className="text-3xl md:text-4xl font-Merriweather font-bold !leading-[160%] mt-7 sm:mt-[50px] text-light_brown">
           Keep reading
         </h2>
         {recentArticles.map((val, i) => (
@@ -149,7 +149,7 @@ const BlogDetails = () => {
             alt="georgeProfile"
           />
           <div>
-            <h3 className="text-xl md:text-2xl font-Merriweather leading-[160%] mb-3 text-black">
+            <h3 className="text-xl md:text-2xl font-Merriweather !leading-[160%] mb-3 text-black">
               Written by George Costanza
             </h3>
             <p className="text-base sm:text-[18px] font-Roboto text-black !leading-[160%]">

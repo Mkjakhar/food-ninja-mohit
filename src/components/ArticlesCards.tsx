@@ -28,19 +28,19 @@ const ArticlesCards: React.FC<ArticlesCardsProps> = ({ val }) => {
             <span className="text-[#dfe1e7] py-1 px-4 rounded mt-4 sm:mt-5 mb-2 inline-block bg-light_blue font-Roboto font-medium text-sm leading-normal">
               {val.topic}
             </span>
-            <h3 className="text-xl md:text-2xl font-Merriweather font-bold leading-[140%] text-black">
+            <h3 className="text-xl md:text-2xl font-Merriweather font-bold !leading-[140%] text-black">
               {val.title}
             </h3>
-            <p className="text-sm mb-3 sm:mb-4 leading-[160%] text-dark_gray font-Merriweather">
+            <p className="text-sm mb-3 sm:mb-4 !leading-[160%] text-dark_gray font-Merriweather">
               {val.time}
             </p>
-            <p className="text-base leading-[160%] text-light_black font-Roboto">
+            <p className="text-base !leading-[160%] text-light_black font-Roboto">
               {val.description}
             </p>
           </div>
           <div className="flex items-center gap-[14px] mt-5">
             <img src={val.profileImg} alt="George Costanza" />
-            <h3 className="text-sm font-Merriweather font-bold leading-[160%] text-black">
+            <h3 className="text-sm font-Merriweather font-bold !leading-[160%] text-black">
               {val.profileName}
             </h3>
           </div>
