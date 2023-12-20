@@ -9,19 +9,16 @@ const BackToTop = () => {
       behavior: "smooth",
     });
   }
-
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
   };
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <>
       {scrollPosition > 200 ? (
