@@ -7,7 +7,7 @@ const BlogDetails = () => {
   return (
     <>
       <div className="container lg:max-w-[824px] pt-6 sm:pt-9">
-        <span className="text-white py-1 px-4 rounded mb-[14px] inline-block bg-light_blue font-Roboto font-medium text-sm leading-normal">
+        <span className="text-[#dfe1e7] py-1 px-4 rounded mb-[14px] inline-block bg-light_blue font-Roboto font-medium text-sm leading-normal">
           Food Theory
         </span>
         <h2 className="text-3xl sm:text-[32px] md:text-[46px] text-black font-black leading-normal font-Merriweather">

@@ -25,7 +25,7 @@ const ArticlesCards: React.FC<ArticlesCardsProps> = ({ val }) => {
                 alt="travel"
               />
             </div>
-            <span className="text-white py-1 px-4 rounded mt-4 sm:mt-5 mb-2 inline-block bg-light_blue font-Roboto font-medium text-sm leading-normal">
+            <span className="text-[#dfe1e7] py-1 px-4 rounded mt-4 sm:mt-5 mb-2 inline-block bg-light_blue font-Roboto font-medium text-sm leading-normal">
               {val.topic}
             </span>
             <h3 className="text-xl md:text-2xl font-Merriweather font-bold leading-[140%] text-black">
