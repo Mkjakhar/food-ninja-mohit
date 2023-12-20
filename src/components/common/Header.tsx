@@ -31,20 +31,14 @@ const Header = () => {
             }`}
           >
             <li onClick={() => setResNav(!resNav)}>
-              <a
-                href="#blog"
-                className="text-gray text-base sm:text-lg leading-normal hover:text-black duration-200 font-Roboto"
-              >
+              <span className="text-gray cursor-pointer text-base sm:text-lg leading-normal hover:text-black duration-200 font-Roboto">
                 Blog
-              </a>
+              </span>
             </li>
             <li onClick={() => setResNav(!resNav)}>
-              <a
-                href="#about"
-                className="text-gray text-base sm:text-lg leading-normal hover:text-black duration-200 font-Roboto"
-              >
+              <span className="text-gray cursor-pointer text-base sm:text-lg leading-normal hover:text-black duration-200 font-Roboto">
                 About
-              </a>
+              </span>
             </li>
             <li onClick={() => setResNav(!resNav)}>
               <a

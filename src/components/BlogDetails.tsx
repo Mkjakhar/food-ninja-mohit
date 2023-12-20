@@ -6,7 +6,7 @@ import RecentBlogCards from "./RecentBlogCards";
 const BlogDetails = () => {
   return (
     <>
-      <div className="container lg:max-w-[824px] pt-9">
+      <div className="container lg:max-w-[824px] pt-6 sm:pt-9">
         <span className="text-white py-1 px-4 rounded mb-[14px] inline-block bg-light_blue font-Roboto font-medium text-sm leading-normal">
           Food Theory
         </span>
@@ -136,7 +136,7 @@ const BlogDetails = () => {
           bibendum semper. Sed lorem vel donec proin. Volutpat aliquet rhoncus
           sit et.
         </p>
-        <h2 className="text-2xl md:text-3xl font-Merriweather font-bold leading-[160%] mt-5 sm:mt-[30px] text-light_brown">
+        <h2 className="text-3xl md:text-4xl font-Merriweather font-bold leading-[160%] mt-7 sm:mt-[50px] text-light_brown">
           Keep reading
         </h2>
         {recentArticles.map((val, i) => (

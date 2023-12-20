@@ -22,7 +22,7 @@ const Hero = () => {
             <SearchIcon />
           </label>
         </form>
-        <div className="flex w-full justify-between flex-wrap gap-8 sm:gap-0 sm:mb-10 md:mb-16 lg:mb-[166px]">
+        <div className="flex w-full justify-between flex-wrap gap-8 sm:gap-0 sm:mb-10 md:mb-16 lg:mb-[126px]">
           {articlesCardsData.map((val, i) => (
             <ArticlesCards val={val} key={i} />
           ))}

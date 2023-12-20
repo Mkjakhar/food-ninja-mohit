@@ -14,7 +14,7 @@ interface ArticlesCardsProps {
 }
 const ArticlesCards: React.FC<ArticlesCardsProps> = ({ val }) => {
   return (
-    <div className="w-full sm:w-[47%]">
+    <div className="w-full sm:w-[47%] sm:mb-10">
       <Link to={val.path}>
         <div className="h-full flex flex-col justify-between group">
           <div>
