@@ -17,7 +17,7 @@ const BlogDetails = () => {
           Aug 1, 2021 • 7 min read
         </p>
         <img
-          className="w-full shadow-xl rounded-[5px]"
+          className="w-full shadow-xl min-h-[100px] md:min-h-[250px] rounded-[5px]"
           src={theory}
           alt="theory detail"
         />
