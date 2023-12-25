@@ -1,6 +1,6 @@
 import { SearchIcon } from "./common/Icons";
 import ArticlesCards from "./ArticlesCards";
-import { articlesCardsData } from "./common/Helper";
+import { articlesData } from "./common/Helper";
 const Hero = () => {
   return (
     <>
@@ -23,8 +23,8 @@ const Hero = () => {
           </label>
         </form>
         <div className="flex w-full justify-between flex-wrap gap-8 sm:gap-0 sm:mb-10 md:mb-16 lg:mb-[126px]">
-          {articlesCardsData.map((val, i) => (
-            <ArticlesCards val={val} key={i} />
+          {articlesData.map((val, i) => (
+            <ArticlesCards {...val} key={i} />
           ))}
         </div>
       </div>

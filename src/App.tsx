@@ -11,7 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blog-details" element={<SingleBlog />} />
+          <Route path="/blog/:id" element={<SingleBlog />} />
         </Routes>
       </BrowserRouter>
     </>

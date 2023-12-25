@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 const Header = () => {
   const [resNav, setResNav] = useState(false);
 
@@ -9,6 +9,10 @@ const Header = () => {
   } else {
     document.body.classList.remove("overflow_sm_hidden");
   }
+  const location = useLocation();
+
+  const isBlogActive = location.pathname === "/blog-details";
+  const blogClassName = isBlogActive ? "!text-black !font-medium" : "";
   return (
     <>
       <div className="py-5 md:py-10 xl:py-16 container xl:max-w-[1100px]">
@@ -31,14 +35,20 @@ const Header = () => {
             }`}
           >
             <li onClick={() => setResNav(!resNav)}>
-              <span className="text-gray cursor-pointer text-base sm:text-lg leading-normal hover:text-black duration-200 font-Roboto">
+              <NavLink
+                to="/blog-details"
+                className={`text-gray cursor-pointer text-base sm:text-lg leading-normal hover:text-black duration-200 font-Roboto ${blogClassName}`}
+              >
                 Blog
-              </span>
+              </NavLink>
             </li>
             <li onClick={() => setResNav(!resNav)}>
-              <span className="text-gray cursor-pointer text-base sm:text-lg leading-normal hover:text-black duration-200 font-Roboto">
+              <NavLink
+                to=""
+                className="text-gray cursor-pointer text-base sm:text-lg leading-normal hover:text-black duration-200 font-Roboto"
+              >
                 About
-              </span>
+              </NavLink>
             </li>
             <li onClick={() => setResNav(!resNav)}>
               <a

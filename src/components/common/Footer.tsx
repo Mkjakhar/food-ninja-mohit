@@ -6,8 +6,8 @@ const Footer = () => {
         className="container xl:max-w-[1100px] pb-10 mt-[80px] sm:mt-[100px]"
       >
         <div className="flex justify-between flex-wrap md:flex-nowrap gap-6 lg:gap-[80px]">
-          <div className="w-full sm:w-1/2 md:w-2/5 lg:w-[36%]">
-            <div className="px-[45px] py-[38px] rounded bg-light_blue max-w-[380px]">
+          <div className="w-full md:w-2/5 lg:w-[36%]">
+            <div className="px-7 sm:px-[45px] py-[38px] rounded bg-light_blue">
               <h3 className="text-xl text-center md:text-2xl font-Merriweather font-black !leading-[160%] text-white">
                 Subscribe To <span className="block">Our Newsletter</span>
               </h3>
@@ -15,7 +15,7 @@ const Footer = () => {
                 Get weekly food news, articles, and videos delivered to your
                 inbox.
               </p>
-              <form className="max-w-[288px] mx-auto mt-[17px]">
+              <form className="max-w-[288px] text-center md:text-left mx-auto mt-[17px]">
                 <input
                   required
                   type="email"

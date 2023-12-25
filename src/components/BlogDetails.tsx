@@ -1,44 +1,41 @@
 import theory from "../assets/images/png/theory-detail.png";
 import georgeProfile from "../assets/images/png/george-profile.png";
 import profileImg from "../assets/images/svg/george-costanza.svg";
-import { recentArticles } from "./common/Helper";
+import { articlesData, recentArticles } from "./common/Helper";
 import RecentBlogCards from "./RecentBlogCards";
+import { useParams } from "react-router-dom";
 const BlogDetails = () => {
+  const { id } = useParams();
+  const blogPost = articlesData.find((post) => post.id === id);
+
   return (
     <>
       <div className="container lg:max-w-[824px] pt-6 sm:pt-9">
         <span className="text-[#dfe1e7] py-1 px-4 rounded mb-[14px] inline-block bg-light_blue font-Roboto font-medium text-sm leading-normal">
-          Food Theory
+          {blogPost?.category}
         </span>
         <h2 className="text-3xl sm:text-[32px] md:text-[46px] text-black font-black leading-normal font-Merriweather">
-          What I Learned About Life and Food Backpacking Around Greece
+          {blogPost?.title}
         </h2>
         <p className="text-sm mb-3 sm:mb-4 !leading-[160%] text-dark_gray font-Merriweather">
-          Aug 1, 2021 • 7 min read
+          {blogPost?.updatedAt}
         </p>
         <img
-          className="w-full shadow-xl min-h-[100px] md:min-h-[250px] rounded-[5px]"
-          src={theory}
+          className="w-full shadow-xl h-[180px] sm:h-[278px] object-cover rounded-[5px]"
+          src={blogPost?.image}
           alt="theory detail"
         />
         <div className="flex items-center gap-[14px] mt-5">
-          <img src={profileImg} alt="George Costanza" />
+          <img src={blogPost?.author.profileImg} alt="George Costanza" />
           <h3 className="text-sm font-Merriweather font-bold !leading-[160%] text-black">
-            George Costanza
+            {blogPost?.author.title}
           </h3>
         </div>
         <p className="text-xl sm:text-2xl md:text-3xl font-medium font-Roboto text-light_black !leading-[160%] mt-5 sm:mt-[30px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices dui
-          diam arcu pharetra at laoreet pellentesque. Imperdiet sit ut ornare
-          nulla risus id fames nascetur urna. Eros in neque tincidunt.
+          {blogPost?.description.subTitle}
         </p>
         <p className="text-base sm:text-xl font-Roboto text-light_black !leading-[160%] mt-5 sm:mt-[30px]">
-          Vel leo proin facilisis metus sit ut cursus sagittis. Diam donec mus
-          malesuada et ac vulputate. Aenean lacinia suspendisse et mattis
-          adipiscing id dictum commodo nunc. Feugiat lorem cras ut cras enim
-          neque, elit, facilisi habitasse. Facilisis faucibus nunc congue urna
-          diam. Vitae, diam justo, massa, elit. In et nibh ut in diam tellus at
-          tellus diam.
+          {blogPost?.description.description}
         </p>
         <div className="sm:p-[35px] p-6 sm:pt-8 bg-white_off_2 my-7 sm:mt-10 sm:mb-[10px] rounded-lg border border-[#ddd]">
           <h3 className="text-xl md:text-2xl font-Merriweather font-bold !leading-[160%] text-black">
@@ -150,12 +147,10 @@ const BlogDetails = () => {
           />
           <div>
             <h3 className="text-xl md:text-2xl font-Merriweather !leading-[160%] mb-3 text-black">
-              Written by George Costanza
+              Written by {blogPost?.author.title}
             </h3>
             <p className="text-base sm:text-[18px] font-Roboto text-black !leading-[160%]">
-              Volutpat cursus id id tincidunt duis id. Urna curabitur ultrices
-              molestie bibendum. Purus orci nisl, commodo ipsum, ut urna,
-              elementum. Nunc potenti lectus in erat ligula cras. Eget.
+              {blogPost?.author.description}
             </p>
           </div>
         </div>
