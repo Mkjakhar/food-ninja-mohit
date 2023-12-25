@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <div className="container xl:max-w-[1100px] pt-[34px] flex flex-col items-center">
         <h1 className="text-center text-[32px] sm:text-4xl md:text-5xl text-blue font-black leading-normal font-Merriweather">
-          The Food Ninja Blog
+          The Ninja Blog
         </h1>
         <p className="sm:mt-[10px] text-center text-gray text-lg sm:text-xl leading-normal font-Roboto">
           A blog about food, experiences, and recipes.

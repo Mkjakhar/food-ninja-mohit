@@ -5,11 +5,9 @@ export default interface BlogPost {
   title: string;
   description: { subTitle: string; description: string };
   body: string;
-  //   content: string;
   author: Author;
   createdAt: string;
   updatedAt: string;
   image: string;
   category: Category;
 }
-  

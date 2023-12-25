@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link to="/">
             <span className="text-2xl z-10 relative font-Merriweather leading-normal font-black text-blue cursor-pointer">
-              Food Ninja
+               Ninja Blogs
             </span>
           </Link>
           <button onClick={() => setResNav(!resNav)} className="z-10 sm:hidden">

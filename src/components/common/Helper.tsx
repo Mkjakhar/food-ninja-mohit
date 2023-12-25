@@ -1,25 +1,8 @@
 import george from "../../assets/images/svg/george-costanza.svg";
-import fruits from "../../assets/images/png/fruits.png";
-import family from "../../assets/images/png/family.png";
 import travel from "../../assets/images/png/travel.png";
 import foodTheory from "../../assets/images/png/food-theory.png";
 import Author from "../../model/author";
 import BlogPost from "../../model/blogPost";
-
-export const recentArticles = [
-  {
-    topicImg: fruits,
-    title: "Why you don’t need more than 3 pieces of clothing",
-    description:
-      "Et vitae, mollis euismod lobortis blandit amet sed amet. Amet ut amet nisl tortor arcu non id nulla mauris neque nisl magna.",
-  },
-  {
-    topicImg: family,
-    title: "Why you should cook with your family together everyday",
-    description:
-      "Rutrum aliquet eros semper nunc. In adipiscing augue sagittis, fermentum donec nunc lacinia. Risus in egestas in orci quam.",
-  },
-];
 
 export const authorData: Author[] = [
   {
@@ -88,7 +71,7 @@ export const articlesData: BlogPost[] = [
     id: "4",
     title: "Stargazing Secrets: Navigating Life Through Astrology",
     description: {
-      subTitle: "sub title three",
+      subTitle: "sub title four",
       description:
         "Embark on a celestial voyage as we explore the mystical realm of astrology. Delve into horoscopes, cosmic connections, and the profound impact of celestial bodies on our lives. Whether you're a seasoned astrologer or a curious star-gazer, our blog offers insights, guidance, and a cosmic perspective to help you navigate the intricacies of life's journey.",
     },
