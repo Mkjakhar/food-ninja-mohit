@@ -47,7 +47,6 @@ export const articlesData: BlogPost[] = [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam mollis lectus vitae nulla malesuada amet purus sed. A condimentum tempus a egestas sodales diam cras.",
     },
     body: "body",
-    //   content: string,
     author: authorData[0],
     createdAt: "Jun 21, 2021 • 11 min read",
     updatedAt: "Jun 21, 2021 • 11 min read",
@@ -63,11 +62,42 @@ export const articlesData: BlogPost[] = [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam mollis lectus vitae nulla malesuada amet purus sed. A condimentum tempus a egestas sodales diam cras. Ligula a varius tempus ac amet, vel lectus sed. Urna sit Eget.",
     },
     body: "body two",
-    //   content: string,
     author: authorData[1],
     createdAt: "Aug 1, 2021 • 7 min read",
     updatedAt: "Aug 1, 2021 • 7 min read",
     image: foodTheory,
     category: "Food Theory",
+  },
+  {
+    id: "3",
+    title: "Riding the Roads: Exploring the World of Cars",
+    description: {
+      subTitle: "sub title three",
+      description:
+        "Uncover the latest in automotive wonders and dive into the thrilling world of cars. From cutting-edge technology and performance reviews to captivating stories of road trips and classic rides, join us on a journey through the fast lanes of automotive excellence.",
+    },
+    body: "body three",
+    author: authorData[1],
+    createdAt: "Dec 1, 2021 • 8 min read",
+    updatedAt: "Dec 1, 2021 • 8 min read",
+    image:
+      "https://images.unsplash.com/photo-1703014076660-c69b905a740f?q=80&w=1384&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Technology",
+  },
+  {
+    id: "4",
+    title: "Stargazing Secrets: Navigating Life Through Astrology",
+    description: {
+      subTitle: "sub title three",
+      description:
+        "Embark on a celestial voyage as we explore the mystical realm of astrology. Delve into horoscopes, cosmic connections, and the profound impact of celestial bodies on our lives. Whether you're a seasoned astrologer or a curious star-gazer, our blog offers insights, guidance, and a cosmic perspective to help you navigate the intricacies of life's journey.",
+    },
+    body: "body three",
+    author: authorData[1],
+    createdAt: "Jan 23, 2021 • 5 min read",
+    updatedAt: "Jan 23, 2021 • 5 min read",
+    image:
+      "https://plus.unsplash.com/premium_photo-1700081737402-8aad0453bff8?q=80&w=1501&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Fashion",
   },
 ];

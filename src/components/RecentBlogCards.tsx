@@ -9,12 +9,14 @@ const RecentBlogCards: React.FC<BlogPost> = ({
   return (
     <>
       <Link to={`/blog/${id}`} onClick={() => scrollTo(0, 0)}>
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 md:gap-[34px] mt-5 sm:mt-[30px]">
-          <img
-            className="w-[250px] h-[166px] object-cover rounded shadow-xl"
-            src={image}
-            alt="fruits"
-          />
+        <div className="flex flex-col sm:flex-row gap-4 group sm:gap-7 md:gap-[34px] mt-5 sm:mt-[30px]">
+          <div className="overflow-hidden rounded w-full max-w-[250px] h-[166px] shadow-xl">
+            <img
+              className="group-hover:scale-110 duration-300 w-full h-full object-cover rounded"
+              src={image}
+              alt="fruits"
+            />
+          </div>
           <div>
             <h3 className="text-xl md:text-2xl font-Merriweather font-bold !leading-[160%] text-light_brown">
               {title}

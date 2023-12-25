@@ -143,7 +143,7 @@ const BlogDetails = () => {
         <h2 className="text-3xl md:text-4xl font-Merriweather font-bold !leading-[160%] mt-7 sm:mt-[50px] text-light_brown">
           Keep reading
         </h2>
-        {articlesData.map((val, i) => (
+        {articlesData.slice(1, 4).map((val, i) => (
           <RecentBlogCards {...val} key={i} />
         ))}
         <div className="py-8 sm:py-11 px-6 sm:px-[31px] sm:items-center bg-white_off_2 mt-12 sm:mb-[10px] rounded-lg border border-[#ddd] flex-col sm:flex-row flex gap-5 sm:gap-7">
