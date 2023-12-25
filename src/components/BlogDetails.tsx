@@ -1,13 +1,16 @@
-import theory from "../assets/images/png/theory-detail.png";
-import georgeProfile from "../assets/images/png/george-profile.png";
-import profileImg from "../assets/images/svg/george-costanza.svg";
-import { articlesData, recentArticles } from "./common/Helper";
+import { articlesData } from "./common/Helper";
 import RecentBlogCards from "./RecentBlogCards";
 import { useParams } from "react-router-dom";
 const BlogDetails = () => {
   const { id } = useParams();
   const blogPost = articlesData.find((post) => post.id === id);
-
+  if (!blogPost) {
+    return (
+      <h2 className="text-3xl text-center sm:text-[32px] md:text-[46px] text-red-500 font-black leading-normal font-Merriweather">
+        Page Not Found
+      </h2>
+    );
+  }
   return (
     <>
       <div className="container lg:max-w-[824px] pt-6 sm:pt-9">
@@ -26,7 +29,11 @@ const BlogDetails = () => {
           alt="theory detail"
         />
         <div className="flex items-center gap-[14px] mt-5">
-          <img src={blogPost?.author.profileImg} alt="George Costanza" />
+          <img
+            className="rounded-full h-[42px] object-cover w-[42px]"
+            src={blogPost?.author.profileImg}
+            alt="George Costanza"
+          />
           <h3 className="text-sm font-Merriweather font-bold !leading-[160%] text-black">
             {blogPost?.author.title}
           </h3>
@@ -136,13 +143,13 @@ const BlogDetails = () => {
         <h2 className="text-3xl md:text-4xl font-Merriweather font-bold !leading-[160%] mt-7 sm:mt-[50px] text-light_brown">
           Keep reading
         </h2>
-        {recentArticles.map((val, i) => (
-          <RecentBlogCards val={val} key={i} />
+        {articlesData.map((val, i) => (
+          <RecentBlogCards {...val} key={i} />
         ))}
         <div className="py-8 sm:py-11 px-6 sm:px-[31px] sm:items-center bg-white_off_2 mt-12 sm:mb-[10px] rounded-lg border border-[#ddd] flex-col sm:flex-row flex gap-5 sm:gap-7">
           <img
-            className="h-[150px] w-[150px] object-cover"
-            src={georgeProfile}
+            className="h-[150px] w-[150px] rounded-full object-cover"
+            src={blogPost.author.profileImg}
             alt="georgeProfile"
           />
           <div>

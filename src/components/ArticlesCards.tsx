@@ -37,7 +37,7 @@ const ArticlesCards: React.FC<BlogPost> = ({
             </p>
           </div>
           <div className="flex items-center gap-[14px] mt-5">
-            <img src={author.profileImg} alt="George Costanza" />
+            <img className="rounded-full h-[42px] object-cover w-[42px]" src={author.profileImg} alt="George Costanza" />
             <h3 className="text-sm font-Merriweather font-bold !leading-[160%] text-black">
               {author.title}
             </h3>

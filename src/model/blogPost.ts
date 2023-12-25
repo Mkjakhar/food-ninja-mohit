@@ -12,3 +12,4 @@ export default interface BlogPost {
   image: string;
   category: Category;
 }
+  
