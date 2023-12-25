@@ -22,7 +22,7 @@ export const authorData: Author[] = [
 ];
 export const articlesData: BlogPost[] = [
   {
-    id: "1",
+    id: "2384791",
     title: "What Traveling Greece For 2 Weeks Taught Me About Life",
     description: {
       subTitle: "sub title",
@@ -37,7 +37,7 @@ export const articlesData: BlogPost[] = [
     category: "Travel",
   },
   {
-    id: "2",
+    id: "876963",
     title: "Why You Should Never Order 12 Chicken Nuggets and Fries",
     description: {
       subTitle: "sub title two",
@@ -52,7 +52,7 @@ export const articlesData: BlogPost[] = [
     category: "Food Theory",
   },
   {
-    id: "3",
+    id: "235433",
     title: "Riding the Roads: Exploring the World of Cars",
     description: {
       subTitle: "sub title three",
@@ -68,7 +68,7 @@ export const articlesData: BlogPost[] = [
     category: "Technology",
   },
   {
-    id: "4",
+    id: "84764",
     title: "Stargazing Secrets: Navigating Life Through Astrology",
     description: {
       subTitle: "sub title four",
@@ -76,7 +76,7 @@ export const articlesData: BlogPost[] = [
         "Embark on a celestial voyage as we explore the mystical realm of astrology. Delve into horoscopes, cosmic connections, and the profound impact of celestial bodies on our lives. Whether you're a seasoned astrologer or a curious star-gazer, our blog offers insights, guidance, and a cosmic perspective to help you navigate the intricacies of life's journey.",
     },
     body: "body three",
-    author: authorData[1],
+    author: authorData[0],
     createdAt: "Jan 23, 2021 • 5 min read",
     updatedAt: "Jan 23, 2021 • 5 min read",
     image:

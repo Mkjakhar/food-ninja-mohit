@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { articlesData } from "./Helper";
+
 const Footer = () => {
   return (
     <>
@@ -33,29 +36,31 @@ const Footer = () => {
               <li className="text-sm uppercase !leading-[160%] text-black font-semibold font-Merriweather">
                 POPULAR POSTS
               </li>
-              <li className="text-sm !leading-[160%] cursor-pointer duration-200 hover:text-blue hover:underline mt-1 text-black font-medium font-Merriweather">
-                How To Have Your Cake and Eat It Too: The Way of The Chicken Man
-              </li>
-              <li className="text-sm !leading-[160%] cursor-pointer duration-200 hover:text-blue hover:underline text-black font-medium font-Merriweather">
-                My Grandma’s 30-year-old Recipe
-              </li>
-              <li className="text-sm !leading-[160%] cursor-pointer duration-200 hover:text-blue hover:underline text-black font-medium font-Merriweather">
-                What I learned about cooking from Ratatoulie
-              </li>
+              {articlesData.map((val, i) => (
+                <li
+                  key={i}
+                  className="text-sm !leading-[160%] duration-200 hover:text-blue hover:underline mt-1 text-black font-medium font-Merriweather"
+                >
+                  <Link to={`/blog/${val.id}`} onClick={() => scrollTo(0, 0)}>
+                    {val.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
             <ul className="w-full sm:w-[50%] flex flex-col gap-4 sm:gap-[22px]">
               <li className="text-sm !leading-[160%] text-black font-medium font-Roboto">
                 Recent Posts
               </li>
-              <li className="text-sm !leading-[160%] cursor-pointer duration-200 hover:text-blue hover:underline mt-1 text-black font-medium font-Merriweather">
-                How To Have Your Cake and Eat It Too: The Way of The Chicken Man
-              </li>
-              <li className="text-sm !leading-[160%] cursor-pointer duration-200 hover:text-blue hover:underline text-black font-medium font-Merriweather">
-                My Grandma’s 30-year-old Recipe
-              </li>
-              <li className="text-sm !leading-[160%] cursor-pointer duration-200 hover:text-blue hover:underline text-black font-medium font-Merriweather">
-                What I learned about cooking from Ratatoulie
-              </li>
+              {articlesData.map((val, i) => (
+                <li
+                  key={i}
+                  className="text-sm !leading-[160%] duration-200 hover:text-blue hover:underline mt-1 text-black font-medium font-Merriweather"
+                >
+                  <Link to={`/blog/${val.id}`} onClick={() => scrollTo(0, 0)}>
+                    {val.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
